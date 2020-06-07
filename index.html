@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="./scripts/tree-node-script.js"></script>
+
+<body>
+
+    <canvas id="myCanvas" width="1000" height="1000%" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var data = {
+        Daniel: ["Peter", "John", "Khor"],
+        Jonathan: ["Alice", "Jana"],
+        Peter: ["Daniel", "Jonathan", "Khor"]
+    }
+    generateTree(ctx, data)
+</script>
+
+</body>
+
+</html>
+<style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        height: 100%;
+        overflow: auto;
+      }
+</style>
